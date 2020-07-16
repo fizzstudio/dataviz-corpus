@@ -25,13 +25,12 @@
         "keywords": [
           "keywords or subject tags of article that contained the dataviz",
           "another keyword"
-        ],
-
+        ]
       },
       "publish_date": "date published, in ISO-8601 (e.g. 1901-01-01T00:00:01-04:00)",
       "retrieve_date": "date retrieved, in ISO-8601 (e.g. 1901-01-01T00:00:01-04:00)"
-    },
-  }
+    }
+  },
   "data": {
     "url": "URL to data used in the dataviz"
   },
@@ -112,8 +111,7 @@
               "probability": 0.0
             }
           ]
-        },
-
+        }
       ],
       "scatter_clusters": []
     },
