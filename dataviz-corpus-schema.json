@@ -20,6 +20,11 @@
         }
       },
       "article": {
+        "publisher": {
+          "url": "URL of publisher",
+          "name": "name of publisher",
+          "title": "title of publication"
+        },
         "article_url": "URL of article that contained the dataviz",
         "article_title": "title of article that contained the dataviz",
         "article_subheadline": "text of sub-headline of article that contained the dataviz",
@@ -141,7 +146,8 @@
               ]
             }
           ]
-        },
+        }
+      },
       "scatter_clusters": {
         "schema": "URL to metadata scheme for format of pattern data",
         "data": { }
