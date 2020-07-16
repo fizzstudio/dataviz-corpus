@@ -1,4 +1,5 @@
 {
+  "id": "unique id of entry in corpus, probably as UUID",
   "source": {
     "url": "URL where the dataviz was found",
     "alt-urls": [
@@ -21,6 +22,7 @@
       "article": {
         "article_url": "URL of article that contained the dataviz",
         "article_title": "title of article that contained the dataviz",
+        "article_subheadline": "text of sub-headline of article that contained the dataviz",
         "article_text": "URL to text of article that contained the dataviz", 
         "doi": "article's Digital Object Identifier, see https://www.doi.org/",
         "keywords": [
@@ -37,6 +39,10 @@
   },
   "dataviz": {
     "title": "title of the dataviz",
+    "caption": {
+      "headline": "headline of caption from article that contained the dataviz",
+      "text": "text of caption from article that contained the dataviz"
+    },
     "formats": {
       "_file_type_": "URL to repo's version of the dataviz in this MIME type format, based on the common file extension, see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types",
       "svg": "URL to SVG version in repo",
@@ -53,6 +59,7 @@
       "error-bars",
       "dates",
       "100-percent",
+      "composite",
       "etc."
     ],
     "series_count": "number of data series included",
