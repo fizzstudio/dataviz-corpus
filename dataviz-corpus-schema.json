@@ -60,60 +60,78 @@
       "another keyword"
     ],
     "patterns": {
-      "line_trends": [
-        {
-          "series_id": "UID of series this trend contains, e.g. primary key or row header",
-          "series_label": "human-readable label of series this trend contains, e.g. primary key or row header",
-          "trends": [
-            { "_meta_": "trends found in this series, in order" },
+      "line_trends": {
+        "schema": "URL to metadata scheme for format of pattern data",
+        "data": {
+          "dataset": [
             {
-              "type": "Rising",
-              "probability": 0.55
+              "series_id": "UID of series this trend contains, e.g. primary key or row header",
+              "series_label": "human-readable label of series this trend contains, e.g. primary key or row header",
+              "trends": [
+                { "_meta_": "trends found in this series, in order" },
+                {
+                  "type": "Rising",
+                  "probability": 0.55
+                },
+                {
+                  "type": "Falling",
+                  "probability": 0.45
+                },
+                {
+                  "type": "Stable",
+                  "probability": 0.4
+                },
+                {
+                  "type": "Rising Trend",
+                  "probability": 0.65
+                },
+                {
+                  "type": "Change",
+                  "probability": 0.5
+                },
+                {
+                  "type": "Change Last Segment",
+                  "probability": 0.01
+                },
+                {
+                  "type": "Change Return",
+                  "probability": 0.0
+                },
+                {
+                  "type": "Contrast Segment Change",
+                  "probability": 0.0
+                },
+                {
+                  "type": "Big Jump",
+                  "probability": 0.0
+                },
+                {
+                  "type": "Big Fall",
+                  "probability": 0.0
+                },
+                {
+                  "type": "Point Correlation",
+                  "probability": 0.0
+                }
+              ]
             },
             {
-              "type": "Falling",
-              "probability": 0.45
-            },
-            {
-              "type": "Stable",
-              "probability": 0.4
-            },
-            {
-              "type": "Rising Trend",
-              "probability": 0.65
-            },
-            {
-              "type": "Change",
-              "probability": 0.5
-            },
-            {
-              "type": "Change Last Segment",
-              "probability": 0.01
-            },
-            {
-              "type": "Change Return",
-              "probability": 0.0
-            },
-            {
-              "type": "Contrast Segment Change",
-              "probability": 0.0
-            },
-            {
-              "type": "Big Jump",
-              "probability": 0.0
-            },
-            {
-              "type": "Big Fall",
-              "probability": 0.0
-            },
-            {
-              "type": "Point Correlation",
-              "probability": 0.0
+              "series_id": "another UID of series this trend contains, e.g. primary key or row header",
+              "series_label": "another human-readable label of series this trend contains, e.g. primary key or row header",
+              "trends": [
+                { "_meta_": "trends found in this series, in order" },
+                {
+                  "type": "Rising",
+                  "probability": 0.55
+                }
+              ]
             }
           ]
-        }
-      ],
-      "scatter_clusters": []
+        },
+      "scatter_clusters": {
+        "schema": "URL to metadata scheme for format of pattern data",
+        "data": { }
+      }
     },
     "annotations": {
       "studies": {
