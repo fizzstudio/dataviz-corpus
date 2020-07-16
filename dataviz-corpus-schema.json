@@ -21,6 +21,7 @@
       "article": {
         "article_url": "URL of article that contained the dataviz",
         "article_title": "title of article that contained the dataviz",
+        "article_text": "URL to text of article that contained the dataviz", 
         "doi": "article's Digital Object Identifier, see https://www.doi.org/",
         "keywords": [
           "keywords or subject tags of article that contained the dataviz",
@@ -36,7 +37,13 @@
   },
   "dataviz": {
     "title": "title of the dataviz",
-    
+    "formats": {
+      "_file_type_": "URL to repo's version of the dataviz in this MIME type format, based on the common file extension, see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types",
+      "svg": "URL to SVG version in repo",
+      "png": "URL to PNG version in repo",
+      "jpg": "URL to JPEG version in repo",
+      "pdf": "URL to PDF version in repo"
+    },
     "type": "overall type of dataviz, e.g. bar chart, line chart, scatterplot, etc.",
     "features": [
       "see taxonomy (forthcoming) for full list",
